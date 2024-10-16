@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container my-4 py-2">
+      <h1>ToDo List</h1>
+      <hr />
+      <h2>My ToDo List</h2>
+
+      <div class="addSection mb-3">
+        <input
+          type="text"
+          name="doInput"
+          id="doInput"
+          class="form-control"
+          placeholder="Do..."
+        />
+        <input
+          type="button"
+          value="Add"
+          id="addButton"
+          class="btn btn-primary mt-2"
+        />
+      </div>
+
+      <!-- To-Do List Section -->
+      <h3>Tasks To Do</h3>
+      <ul id="doOutput" class="list-group"></ul>
+
+      <!-- Tasks Under Process Section -->
+      <h3 class="mt-4">Tasks Under Process</h3>
+      <ul id="underProcess" class="list-group"></ul>
+
+      <!-- Completed Tasks Section -->
+      <h3 class="mt-4">Completed Tasks</h3>
+      <ul id="completedTasks" class="list-group"></ul>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

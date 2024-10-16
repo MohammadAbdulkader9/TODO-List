@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  background-color: whitesmoke; 
+  padding: 3px;
+}
+
+.container {
+  width: 50%;
+  padding-bottom: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.todo-list-content {
+  width: 50%;
+  max-width: 500px; 
+  background-color: white; 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.addSection input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.addSection input[type="button"] {
+  width: 25%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#doOutput, #underProcess, #completedTasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  transition: transform 0.2s ease; /* Slight animation on hover */
+}
+
+.list-group-item .btn {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.list-group-item.completed {
+  text-decoration: line-through;
+}
+
